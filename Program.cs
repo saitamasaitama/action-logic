@@ -198,8 +198,14 @@ class Program
   {
     var world=new World();
     world.Regist(new TextHumanBrain());
-    world.Start();
+    //world.Start();
 
-    Console.WriteLine("Hello World!");
+    var human=new Mind();
+
+    human.Envi.Apply(30.5f);
+
+    Console.WriteLine(human);
+
+    Console.Write("Done!");
   }
 }
