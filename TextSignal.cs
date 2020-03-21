@@ -85,7 +85,7 @@ public class TextSignalHumanBrain : Brain<TextSignal>
   }
   public override void Receive(TextSignal signal)
   {
-    Console.WriteLine(signal);
+    Console.WriteLine($"RECEIVE:{signal}");
   }
 
 }

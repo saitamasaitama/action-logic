@@ -14,5 +14,9 @@ where T : Signal
   }
   SignalReceiver<T> brain;
   public abstract T Sense();
+
+  public void Push(T signal){
+    brain.Receive(signal);
+  }
 }
 
